@@ -6,8 +6,8 @@ import { HttpClient, HttpParams } from '@angular/common/http';
   providedIn: 'root'
 })
 export class WeatherService {
-  apkey:string = environment.API_KEY;
-  private readonly url:string = 'https://api.openweathermap.org/data/2.5/weather';
+    private readonly url:string = 'https://api.openweathermap.org/data/2.5/weather';
+    private readonly apkey:string = environment.API_KEY;
 
   constructor( private http: HttpClient) { }
 
@@ -19,6 +19,5 @@ export class WeatherService {
       .set('appid', this.apkey);
 
       return  this.http.get(this.url, { params });
-      
     }
 }

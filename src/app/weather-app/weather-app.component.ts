@@ -26,7 +26,7 @@ export class WeatherAppComponent implements OnInit {
 
         this.weatherService.getWeatherByCoord(this.lat, this.lon).subscribe(data => {
           this.weather = data;
-          console.log(this.weather)
+          console.log(this.weather);
          })
       });
     }
