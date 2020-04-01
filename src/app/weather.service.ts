@@ -15,7 +15,7 @@ export class WeatherService {
       const params = new HttpParams()
       .set('lat', lat)
       .set('lon', lon)
-      .set('units', 'metrics')
+      .set('units', 'metric')
       .set('appid', this.apkey);
 
       return  this.http.get(this.url, { params });
