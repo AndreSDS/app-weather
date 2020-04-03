@@ -1,0 +1,44 @@
+.card-weather{
+    width: 390px;
+    max-width: 500px;
+    height: 465px;
+    max-height: 575px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.content img{
+    width: 140px;
+    align-self: center;
+}
+
+.content .text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 30px auto auto;
+}
+
+.content .descripton{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+section.content .descripton p, section.content .descripton h2{
+    margin: 0;
+}
+
+.content .temperature{
+    font-size: 62px;
+    margin: 0;
+}
